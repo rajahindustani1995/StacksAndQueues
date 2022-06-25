@@ -34,22 +34,30 @@ namespace StackAndQueues
 
         }
 
-        public void AppendNode(Node node)           // 70 30 56
+        public void AppendNode(int value)
         {
-            if (Head == null && Tail == null)
+            Node node = new Node(value);
+            //Check wheather the list is empty then creates node as head
+            if (Head == null & Tail == null)
             {
                 Head = node;
                 Tail = node;
             }
             else
             {
-                Tail.next = node;
-                Tail = node;
+                Node temp = Head;
+                ////If node than add new node as head 
+                while (temp.next != null)
+                {
+                    temp = temp.next;
+                }
+                temp.next = node;
             }
+            Console.WriteLine($"Added {value} at start of the linkedlist");
         }
 
 
-        public void InsertNode(int value, int Previousvalue)
+            public void InsertNode(int value, int Previousvalue)
         {
             Node newNode = new Node(value);
             if (Head == null & Tail == null)
