@@ -8,6 +8,7 @@ namespace StackAndQueues
 {
     internal class Stack
     {
+        public Node top;
         LinkedList linkedList;
 
         public Stack()
@@ -22,16 +23,26 @@ namespace StackAndQueues
             linkedList.AddNode(value);
         }
 
+        public Node Top()
+        {
+            return linkedList.Head;
+        }
+
+        public void PeekNode()
+        {
+            if (linkedList == null)
+                return;
+        }
+        public void PopNode()
+        {
+            //Delete Node from stack
+            linkedList.DeleteFirstNode();
+        }
+
         public void DisplayStack()
         {
             Console.WriteLine("Stack:");
             linkedList.Display();
-        }
-
-        public Node Top()
-        {
-            //Return top value of stack
-            return linkedList.Head;
         }
     }
 }

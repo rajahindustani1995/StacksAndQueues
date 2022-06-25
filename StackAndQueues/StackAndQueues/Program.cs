@@ -10,6 +10,8 @@
             stack.Push(56);
             stack.DisplayStack();
             stack.Top();
+            stack.PeekNode();
+            stack.PopNode();
         }
     }
 }

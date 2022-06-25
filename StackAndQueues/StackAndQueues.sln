@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackAndQueues", "StackAndQueues\StackAndQueues.csproj", "{E3AE5C73-D23B-42E6-B360-B7907DDFB801}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackAndQueues", "StackAndQueues\StackAndQueues.csproj", "{E3AE5C73-D23B-42E6-B360-B7907DDFB801}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F0AAECE4-DCF1-4CDC-B8BC-5A7B34FA2219}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
