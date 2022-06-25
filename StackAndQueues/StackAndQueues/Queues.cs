@@ -22,7 +22,12 @@ namespace StackAndQueues
             linkedList.AppendNode(value);
         }
 
-        
+        public void Dequeue()
+        {
+            //Delete the node from queue
+            linkedList.DeleteFirstNode();
+        }
+
 
         public void DisplayQueue()
         {

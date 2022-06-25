@@ -15,7 +15,8 @@
             queue.DisplayQueue();
             queue.Top();
 
-            
+            queue.Dequeue();
+            queue.DisplayQueue();
 
         }
     }
